@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="AboutUs.CSS">
+
+</head>
+<body>
+
+<!-- First page -->
+<div style="height: 70px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab10" onclick="switch1()"></i><i class="fa-solid fa-xmark"  id="tab11" onclick="switch2()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switch1(){
+    get('tab10').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab11').style.display="block";
+}
+function switch2(){
+    get('tab10').style.display="block";
+    get('Panel').style.display="none";
+    get('tab11').style.display="none";
+}
+
+ </script>  
+
+<div class="Container">
+        
+
+    <div class="bimg" style="background-image: url(Image/IMG_20230805_141656.jpg);">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+    </div>
+
+    <div class="about">
+
+        <!-- Making a difference through lifelong learning. -->
+        <h1>Making a difference through lifelong learning.</h1>
+        <p>For over 20 years, Educare College has been providing practical learning experiences.</p>
+        <p>As a registered organisation, our mission is to provide affordable and high-quality education to the community of Educare College, with a belief that education is a right for every person. We strive to ensure that our courses are accessible to everyone in the community, regardless of their gender, status, culture, or ability.</p>
+
+
+        <!-- Community outreach -->
+        <h1>Community outreach</h1>
+        <p>Educare College serves the community by offering quality and affordable educational programs. By partnering with government, we deliver courses that focus on providing education to community groups facing barriers to entering the workforce, including Aboriginal and Torres Strait Islander people, migrants, refugees, students with disabilities, and those experiencing hardship.</p>
+
+
+        <!-- Our history -->
+        <h1>Our history</h1>
+        <p>Starting from humble beginnings in 2003 with just a small office, Educare College was founded based on a Myanmar government policy direction to better use burmese Schools. The idea was to create a place where the community could come together to learn, share ideas, and develop new skills. Educare College was created when Cleveland Street Evening College and Leichhardt Evening College amalgamated.</p>
+        <p>Over the years, the College has expanded its offerings to include   photography, drawing, music, graphic design and Illustation training options. The College became a Registered Training Organisation in 2003 and has won State and National awards Programme of the Year. The College focus proudly remains as the provision of Quality Continuing Adult Education.</p>
+        <p>Today, Educare College is one of the largest and most respected community colleges in Myanmar, offering over 350 courses each year. It continues to be a leader in adult education, providing high-quality, practical, and engaging courses to people from all backgrounds.</p>
+
+
+        <!-- Our Purpose -->
+        <h1>Our Purpose</h1>
+        <p>Educare College is a registered with a Board of Directors. The College has a mission to offer innovative training programmes that support individual efforts and facilitate sustainable social change.</p>
+        <p>We do this by:</p>
+        <ul>
+            <li>Providing quality continuing adult education opportunities for people to build practical and theoretical skills and develop knowledge;</li><br>
+            <li>Leveraging from and developing community capacity and inclusivity;</li><br>
+            <li>Developing innovative affordable and accessible skills training programmes;</li><br>
+            <li>Partnering with all levels of government to deliver education policy objectives.</li>
+        </ul>
+
+
+        <!-- Our Mission -->
+        <h1>Our Mission</h1>
+        <p>To enrich lives, strengthen adult individuals, and build communities through innovative, high-quality continuing education and training.</p>
+
+    </div>
+
+
+<!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+
+</div>
+
+</body>

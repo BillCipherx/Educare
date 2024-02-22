@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="Graphic.CSS">
+
+</head>
+<body>
+
+<!-- First page -->
+<div style="height: 70px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo"><h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab1" onclick="switchone()"></i><i class="fa-solid fa-xmark"  id="tab2" onclick="switchtwo()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switchone(){
+    get('tab1').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab2').style.display="block";
+}
+function switchtwo(){
+    get('tab1').style.display="block";
+    get('Panel').style.display="none";
+    get('tab2').style.display="none";
+}
+
+ </script>  
+
+
+    <div class="Container">
+        
+
+        <div class="bimg" style="background-image: url(Image/Radiant-Rooms-Katerina-Demetriou-Jones\,-BA-Hons-Illustration-and-Visual-Media-crop.jpg);">
+                <div class="title">
+                    <h1>Illustration</h1>
+                    <p>Discover your creative potential with a Illustration today.</p>
+                </div>
+        </div>
+
+        <div class="div1">
+            <h1>Degree-level UK Illustration learning with Educare College</h1>
+
+            <p>Illustration has the power to take someone on a journey through the use of imagery. Make sense of the world and communicating information through creativity and visual storytelling. If you’re ready to learn new skills and enhance your ability, practice and confidence as an illustrator, then this is the illustration course for you!</p>
+
+            <p>Our BA (Hons) Illustration degree introduces you to all different types of drawing and image-making like magazine and book illustration, editorial and commercial briefs, collage, mixed media, comics and graphic novels.</p>
+
+            <p>You’ll become a creative problem solver, learning how to generate ideas, create narratives, undertake your own visual research and develop a fluency in all illustrative contexts.</p>
+
+        </div><br><br>
+
+            <div class="Container1">
+
+                <div class="div2">
+                    <img src="Image/Drawing-vs-Illustration-–-Their-significance-in-Fashion-Thumbnail.jpg" alt="">
+                </div>
+
+                <div class="div3">
+                    <h1>What are graphic design courses?</h1>
+
+                    <p>It’s an ideal online illustration course for anyone wanting to pursue a career in illustration, graphic design, and a range of creative fields from marketing to web design. It’s also a wonderful choice if you’re simply looking to deepen your illustration skills and knowledge for your own personal development.</p>
+
+                    <p>Learning illustration courses allow you to learn at your own pace and complete an illustration degree within a flexible timeframe. This means you’ll have the time to build your artistic and creative skills in balance with your personal and professional life.</p>
+                </div>
+
+                <div class="div4">
+                    <p>In Myanmar, we are facing a crisis situation and we had a group of motivated individuals who recognized the potential of the young generation in the creative field. They see the need for a platform that fosters a positive and supportive learning environment and empowers young people with the skills and tools they need. Thus, the idea of Myanmar's first art department was born.</p>
+        
+                    <p>Educare College is a place where young people can grow and thrive with love and care. The founders believe that by inculcating values such as empathy and compassion, young people will not only succeed in their professional lives but also make a positive impact on society.</p>
+                        
+                    <p>The brand story of Educare College is hope, One of inspiration and transformation. We want to create a space where youth can unleash their creativity and explore their potential. We believe that each person has a unique voice and our goal is to provide a platform where that voice can be heard.</p>
+        
+                    <p>If you’re looking for our courses for beginners – our degrees are open access, this means you won’t need any formal qualifications to apply.</p>
+                </div>
+
+            </div>
+
+            <!-- Courses -->
+
+    <div class="Container2">
+
+        <div class="Foundations Level">
+            <div class="toltip">
+                <img src="Image/wp7240375.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 07 Aug 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75);"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">BA(Hons) Illustration</h2>
+            <p>Study Illustration degree with Educare College.</p><br>
+            <a class="LEARN" href="BA(Hons)Illustration.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level1">
+            <div class="toltip">
+                <img src="Image/rFhnLz.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 04 Dec 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75);"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">MA Illustration</h2>
+            <p>Find your creative voice with our courses in Educare College.</p><br>
+            <a class="LEARN" href="MAIllustration.html">LEARN MORE</a>
+        </div>
+
+    </div><br>
+
+    <!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+
+</div>
+
+    
+</body>
+</html>

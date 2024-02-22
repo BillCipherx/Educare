@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Home.CSS">
+
+</head>
+<body>
+    
+<div style="height: 70px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass" style="color: white;"></i>&emsp;<i class="fa-solid fa-bars" id="tab1" onclick="switchone()"></i><i class="fa-solid fa-xmark"  id="tab2" onclick="switchtwo()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                        <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox1" id="Panel">
+
+    <div class="accordion1">
+
+        <div class="contentBx1">
+            <div class="label1">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx1">
+          <div class="label1"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx1">
+          <div class="label1"><a href="#Subject area">Subject area</a></div>
+          <div class="content1">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx1">
+          <div class="label1"><a href="#About">About</a></div>
+          <div class="content1">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx1">
+            <div class="label1"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion1 = document.getElementsByClassName ('contentBx1');
+    
+
+    for (i = 0; i<accordion1.length; i++ ){
+             accordion1[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switchone(){
+    get('tab1').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab2').style.display="block";
+}
+function switchtwo(){
+    get('tab1').style.display="block";
+    get('Panel').style.display="none";
+    get('tab2').style.display="none";
+}
+
+
+
+ </script>
+
+<div class="firstpage" style="background-image: url(Image/Web-design.jpg);">
+    <div class="first">
+        <h1>Educare College</h1>
+        <p>The brand story of Educare College is hope, One of inspiration and transformation. We want to create a space where youth can unleash their creativity and explore their potential. We believe that each person has a unique voice and our goal is to provide a platform where that voice can be heard.</p>
+    </div>
+</div>
+
+<div class="accordionbox"  style="background-color: #E5BEED;">
+
+    <div class="accordion" >
+
+       <div class="contentBx">
+          <div class="label">Tradition Drawing</div>
+            <div class="content">
+                <a href="Drawinglevel1.html">Foundations</a><br><hr>
+                <a href="DrawingHE4.html">Level 1 (HE4)</a><br><hr>
+                <a href="DrawingHE5.html">Level 2 (HE5)</a><br><hr>
+                <a href="DrawingHE6.html">Level 3 (HE6)</a>
+            </div>
+       </div>
+       <div class="contentBx">
+          <div class="label">Digital Drawing</div>
+            <div class="content">
+                <a href="Diditallevel1.html">Foundations</a><br><hr>
+                <a href="DiditalHE4.html">Level 1 (HE4)</a><br><hr>
+                <a href="DigitalHE5.html">Level 2 (HE5)</a><br><hr>
+                <a href="DiditalHE6.html">Level 3 (HE6)</a>
+            </div>
+       </div>
+       <div class="contentBx">
+            <div class="label">Graphic Design</div>
+                <div class="content">
+                <a href="BA(Hons)GraphicDesign.html">BA(Hons) Graphic Design</a><br><hr>
+                <a href="MAGraphicDesign.html">MA Graphic Design</a>
+                </div>
+       </div>
+       
+    </div>
+
+    <div class="accordion">
+
+       <div class="contentBx">
+          <div class="label">Music</div>
+            <div class="content">
+                <a href="Piano.html">Piano Lessons</a><br><hr>
+                <a href="Drum.html">Drum Lessons</a><br><hr>
+                <a href="Guitar.html">Guitar Lessons</a><br><hr>
+                <a href="Violin.html">Violin Lessons</a>
+            </div>
+       </div>
+       <div class="contentBx">
+          <div class="label">Singing</div>
+            <div class="content">
+                <a href="SingingLesson1.html">Singing Lesson1</a><br><hr>
+                <a href="SingingLesson2.html">Singing Lesson2</a>
+            </div>
+       </div>
+       <div class="contentBx">
+          <div class="label">Songwriting</div>
+            <div class="content">
+                <a href="SongwritingCourse.html">Songwriting Course</a><br><hr>
+                <a href="ReadingWritingPoetry.html">Reading & Writing Poetry</a><br>
+            </div>
+       </div>
+       
+    </div>
+
+    <div class="accordion">
+
+       <div class="contentBx">
+          <div class="label">Photography</div>
+            <div class="content">
+                <a href="BeginnersCourse.html">Beginners Course</a><br><hr>
+                <a href="LightroomEditing.html">Lightroom Editing Course</a><br><hr>
+                <a href="TechnicalSkills.html">Technical Skills</a><br><hr>
+                <a href="CompositionSkills.html">Composition Skills</a>
+            </div>
+       </div>
+       <div class="contentBx">
+          <div class="label">Videography</div>
+            <div class="content">
+                <a href="DSLRMirrorless.html">DSLR & Mirrorless</a><br><hr>
+                <a href="Filmmaking.html">Filmmaking Course</a><br><hr>
+                <a href="AdobePremierePro.html">Adobe Premiere Pro</a>
+            </div>
+       </div>
+       <div class="contentBx">
+          <div class="label">Illustration</div>
+            <div class="content">
+                <a href="BA(Hons)Illustration.html">BA(Hons) Illustration</a><br><hr>
+                <a href="MAIllustration.html">MA Illustration</a>
+            </div>
+       </div>
+       
+    </div>
+
+ </div>
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+
+ </script>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+    </div>
+
+        <div class="carousel-inner" style="height: 100%;">
+
+            <div class="carousel-item active">
+                <a href="Drawing.html"><img src="Image/Picsart_23-08-19_13-39-47-131-01.jpeg" alt=""></a>
+            </div>
+
+             <div class="carousel-item">
+                <a href="Music.html"><img src="Image/Picsart_23-08-19_13-18-40-560-01.jpeg" alt=""></a>
+            </div>
+
+             <div class="carousel-item">
+                <a href="Photography.html"><img src="Image/Picsart_23-08-19_13-21-03-220-01.jpeg" alt=""></a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="Graphic desingn.html"><img src="Image/Picsart_23-08-19_13-28-38-602-01.jpeg" alt=""></a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="Illustration.html"><img src="Image/Picsart_23-08-19_13-25-25-701-01.jpeg" alt=""></a>
+            </div>
+
+        </div>
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+
+   </div><br><br>
+
+<!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+    
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+    
+
+</body>
+</html>

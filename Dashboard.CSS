@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.Container2 h1{
+    text-align: center;
+    color: black;
+}
+.Container2{
+    width: 100%;
+    display: inline-block;
+}
+.Policies ul{
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+}
+.Policies ul li{
+    background-color: white;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+    padding: 20px;
+    padding-right: 90px;
+}
+.Policies1{
+    background-color: rgb(30, 30, 30);
+    height: 100vh;
+}
+.Policies2{
+    background-color: white;
+    padding: 50px;
+    max-width: 700px;
+}
+.Container2{
+    display: flex;
+}
+#tab2{
+    background-color: rgb(30, 30, 30);
+}#tab3{
+    background-color: rgb(30, 30, 30);
+}#tab4{
+    background-color: rgb(30, 30, 30);
+}#tab5{
+    background-color: rgb(30, 30, 30);
+}#tab6{
+    background-color: rgb(30, 30, 30);
+}#tab7{
+    background-color: rgb(30, 30, 30);
+}#tab8{
+    background-color: rgb(30, 30, 30);
+}#tab9{
+    background-color: rgb(30, 30, 30);
+}
+#Panel2{
+    display: none;
+}#Panel3{
+    display: none;
+}#Panel4{
+    display: none;
+}#Panel5{
+    display: none;
+}#Panel6{
+    display: none;
+}#Panel7{
+    display: none;
+}#Panel8{
+    display: none;
+}#Panel9{
+    display: none;
+}
+table,tr,th{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-radius: 1px;
+    text-align: center;
+    height: 100px;
+}
+.login{
+    background-color: rgb(226, 226, 226);
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: rgb(226, 226, 226);
+    padding: 50px;
+}
+.login p{
+    color: rgb(134, 134, 134);
+    font-size: 15px;
+}
+.login button{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border-color: blue;
+}
+@media (max-width: 500px){
+    .Policies1{
+        height: 1500px;
+    }
+    table{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="Courses.CSS">
+
+</head>
+<body>
+
+<!-- First page -->
+<div style="height: 60px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab1" onclick="switchone()"></i><i class="fa-solid fa-xmark"  id="tab2" onclick="switchtwo()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switchone(){
+    get('tab1').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab2').style.display="block";
+}
+function switchtwo(){
+    get('tab1').style.display="block";
+    get('Panel').style.display="none";
+    get('tab2').style.display="none";
+}
+
+ </script>  
+
+
+    <div class="Container" style=" background-image: url(Image/Picsart_23-07-09_11-51-38-225.png);">
+        
+
+        <div class="bimg" style="background-image: url(Image/Fundamentals-of-Drawing-and-Painting.jpeg);">
+                <div class="title">
+                    <h1>BA (Hons Drawing)</h1>
+                    <p>Discover your creative potential with a BA (Hons) Drawing Degree today.</p>
+                </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+                <a href="#TD">
+                    <div class="img card1" style=" background-image: url(Image/creativity-brushes-painting-the-art-of-brush-colors.jpg);">
+                        <div class="col1"><h4>Traditional Drawing</h4></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="#DD">
+                    <div class="img card2" style="background-image: url(Image/IMG_20230628_120637.jpg);">
+                        <div class="col1"><h4>Digital Drawing</h4></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    
+<!-- Second page -->
+
+    <div class="Container2">
+
+        <div class="div1">
+
+            <h1>Expand your perspective with our drawing courses in Educare College</h1><br>
+
+            <p>Ever thought about learning to draw portraits? Perhaps sketching flowers and capturing beautiful scenery is more your thing? With our drawing courses you can learn the techniques and skills you need to turn any blank page into a beautiful artwork.</p>
+
+        </div>
+        
+        <div class="rate">
+
+            <div class="first">
+                <h1><i class="fa-regular fa-star " style="color: rgb(255, 20, 75);"></i>4.7 stars</h1>
+                <p>average rating on Google</p>
+            </div>
+
+            <div class="second">
+                <h1><i class="fa-regular fa-face-smile" style="color: rgb(255, 20, 75);"></i>99%</h1>
+                <p>customer support rating</p>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <p>In Myanmar, we are facing a crisis situation and we had a group of motivated individuals who recognized the potential of the young generation in the creative field. They see the need for a platform that fosters a positive and supportive learning environment and empowers young people with the skills and tools they need. Thus, the idea of Myanmar's first art department was born.</p>
+
+            <p>Educare College is a place where young people can grow and thrive with love and care. The founders believe that by inculcating values such as empathy and compassion, young people will not only succeed in their professional lives but also make a positive impact on society.</p>
+                
+            <p>The brand story of Educare College is hope, One of inspiration and transformation. We want to create a space where youth can unleash their creativity and explore their potential. We believe that each person has a unique voice and our goal is to provide a platform where that voice can be heard.</p>
+
+            <p>If you’re looking for our courses for beginners – our degrees are open access, this means you won’t need any formal qualifications to apply.</p>
+        </div>
+
+    </div>
+
+    <!-- Courses -->
+
+    <div class="Container3" id="TD">
+        
+        <h1 style="color: rgb(255, 20, 75);" >Traditional Drawing</h1>
+
+        <div class="Foundations Level">
+            <div class="toltip">
+                <img src="Image/DrawingBeginners_hero.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 07 Aug 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75);"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Foundations</h2>
+            <p>Learn to put pencil to paper with our drawing courses in Educare College.</p><br>
+            <a class="LEARN" href="Drawinglevel1.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level1">
+            <div class="toltip">
+                <img src="Image/UrbanSketchingPenWashCourse_Hero.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 04 Dec 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 1 (HE4)</h2>
+            <p>Learn to sketch urban street scenes with pen and wash with our drawing cour...</p><br>
+            <a class="LEARN" href="DrawingHE4.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level2">
+            <div class="toltip">
+                <img src="Image/Painting&DrawingBeginners_Hero.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 01 Apr 2024</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 2 (HE5)</h2>
+            <p>Learn drawing and painting skills with our drawing courses and painting cour...</p><br>
+            <a class="LEARN" href="DrawingHE5.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level3">
+            <div class="toltip2">
+                <img src="Image/PaintingDrawingHero.jpg" alt="">
+                <div class="toltip-text2">
+                    <h1>Start-Mon 05 Aug 2024</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 3 (HE6)</h2>
+            <p>Learn to develop your drawing and painting skills with our visual arts cour...</p><br>
+            <a class="LEARN" href="DrawingHE6.html">LEARN MORE</a>
+        </div>
+    </div><br><hr>
+
+        
+    <div class="Container3" id="DD">
+        <h1 style="color: rgb(255, 20, 75);">Digital Drawing</h1>
+
+        <div class="Foundations Level">
+            <div class="toltip">
+                <img src="Image/IMG_20230709_154046.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 07 Aug 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Foundations</h2>
+            <p>Learn to beginner's guide to digital art in Educare College.</p><br>
+            <a class="LEARN" href="Diditallevel1.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level1">
+            <div class="toltip">
+                <img src="Image/IMG_20230709_153901.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 04 Dec 2023</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 1 (HE4)</h2>
+            <p>Learn to digitally painting light and color in Educare College.</p><br>
+            <a class="LEARN" href="DiditalHE4.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level2">
+            <div class="toltip">
+                <img src="Image/IMG_20230709_154033.jpg" alt="">
+                <div class="toltip-text">
+                    <h1>Start-Mon 01 Apr 2024</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 2 (HE5)</h2>
+            <p>Learn to characters and backgrounds in Educare College.</p><br>
+            <a class="LEARN" href="DigitalHE5.html">LEARN MORE</a>
+        </div>
+
+        <div class="Foundations Level3">
+            <div class="toltip2">
+                <img src="Image/IMG_20230709_153913.png" alt="">
+                <div class="toltip-text2">
+                    <h1>Start-Mon 05 Aug 2024</h1>
+                    <p style="color: #888888;"><i class="fa-regular fa-clock"></i>&emsp;9:00AM - 4:00PM</p>
+                    <p style="color: #888888;"><i class="fa-solid fa-location-dot"></i>&emsp;66th St x 68th St, Mandalay</p>
+                    <h2 style="text-align: center;">1500000MMK</h2>
+                    <button style="width: 300px; height: 35px;background-color: rgb(255, 20, 75); color: white; border-color: rgb(255, 20, 75)"><a href="Enrol.html" style="text-decoration: none; color: white;">ENROL NOW</a></button>
+                    <p style="font-size: 10px; text-align: center;">Now Available</p><br>
+                    <div style="background-color: #e2e2e2; padding: 2px;"><p style="font-size: 10px; text-align: center;">Bring your sketchbook! It to bring your own tools.</p></div>
+                </div>
+            </div>
+            <h2 style="color: rgb(255, 20, 75);">Level 3 (HE6)</h2>
+            <p>Learn to Learn 3d modeling and digital sculpting from the best and start...</p><br>
+            <a class="LEARN" href="DiditalHE6.html">LEARN MORE</a>
+        </div>
+    </div>
+    
+
+<!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+    
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+    
+</body>
+</html>

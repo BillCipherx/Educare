@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="AboutUs.CSS">
+
+</head>
+<body>
+
+<!-- First page -->
+<div style="height: 70px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab10" onclick="switch1()"></i><i class="fa-solid fa-xmark"  id="tab11" onclick="switch2()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switch1(){
+    get('tab10').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab11').style.display="block";
+}
+function switch2(){
+    get('tab10').style.display="block";
+    get('Panel').style.display="none";
+    get('tab11').style.display="none";
+}
+
+ </script>  
+
+
+
+<div class="Container">
+        
+
+    <div class="bimg" style="background-image: url(Image/page_Discounts&Concessions_hero.jpg);">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+    </div>
+
+    <div class="about">
+
+        <p>Have a question or need some assistance? You can get in contact with us in a variety of ways!</p>
+        <div class="Contact">
+            <div style="margin-right: 100px;">
+                <h1>Live chat</h1>
+                <a href=""><b>Live chat now</b></a>
+                <h1>Email</h1>
+                <a href=""><b>educarecollege@gmail.com</b></a>
+                <h1>Phone</h1>
+                <a href=""><b>09-789417850</b></a>
+                <p>Monday to Thursday, 9:00 am to 4:30 pm</p>
+                <p> Friday 9:00 am to 4:00 pm</p>
+            </div>
+
+            <div style="margin-right: 10px;">
+                <p><b>Campus</b></p>
+                <p>Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</p>
+                <p>Monday to Thursday, 8:30 am to 8:30 pm</p>
+                <p>Friday and Saturday, 8:30 am to 4:00 pm</p>
+                <h1>After Hours Contact</h1>
+                <a href=""><b>09-691558679</b></a>
+                <h1>Social media</h1>
+                <a href=""><b>Facebook</b></a>
+                <a href=""><b>Instagram</b></a>
+                <a href=""><b>Twitter</b></a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+
+</div>
+
+</body>

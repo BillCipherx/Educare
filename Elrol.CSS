@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+#Search{
+    height: 30px;
+    width: 200px;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.fa-bars{
+    color: white;
+    display: none;
+    margin-top: 7px;
+    float: right;
+}
+.fa-xmark{
+    color: white;
+    display: none;
+}
+/* accordionbox */
+.accordionbox{
+    /* display: flex; */
+    display: none;
+ }
+ .accordion {
+   position: fixed;
+   top: 70px;
+    width: 100%;
+    background-color: rgb(255, 20, 75);
+ }
+  .contentBx {
+    position: relative;
+    /* margin: 20px; */
+    width: 100%;
+ }
+ .label {
+    position: relative;
+    background-color:  rgb(255, 20, 75);
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    cursor: pointer;
+    height: 35px;
+ }
+ .label a{
+    text-decoration: none;
+    color: white;
+ }
+ .label::before {
+    content: '+';
+    position: absolute;
+    /* top: 20%; */
+    right: 20px;
+ }
+ .content a{
+   color: white;
+   text-decoration: none;
+   padding-left: 30px;
+ }
+  .contentBx.active .label::before {
+    content: '-';
+ }
+ .content {
+    position: relative;
+    padding: 10px 20px;
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
+    display: none;
+ }
+ .contentBx.active .content {
+    display: block;
+    height: auto;
+    padding: 10px;
+    transition-delay: 5s;
+ }
+
+.navbar{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:  rgb(255, 20, 75);
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 0px;
+    z-index: 2;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+    /* border-radius: 50px; */
+}
+.navbar h2{
+    color: #fff;
+    padding-left: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+/* Hover start*/
+.hover1 {
+    display: none;
+ }
+ .hover1 a{
+     display: block;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .courses:hover .hover1 {
+     position: absolute;
+     width: 150px;
+     display: block;
+     text-align: center; 
+     background-color: rgb(255, 20, 75);
+     border-radius: 12px;
+ }
+ .hover1 a:hover{
+     text-decoration-line:underline;
+ }
+ .hover2 {
+     display: none;
+ }
+ .hover2 a{
+     display: block;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .About:hover .hover2 {
+     position: absolute;
+     width: 150px;
+     display: block;
+     text-align: center; 
+     background-color: rgb(255, 20, 75);
+     border-radius: 12px;
+ }
+ .hover2 a:hover{
+     text-decoration-line:underline;
+ }
+ /* Hover end*/
+
+.Enrol{
+    display: flex;
+    width: 700px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 400px;
+    box-shadow: 5px 5px 20px 5px #888888;
+}
+.Eimg img{
+    width: 100%;
+}
+.Eimg1 img{
+    width: 100%;
+}
+.Eimg1 .Pay{
+    width: 70%;
+}
+.Eimg1 .Payment{
+    border: solid 1px rgb(100, 100, 100);
+    width: 109px; display:
+    inline-block;
+    color: white;
+    margin-top: 50px;
+}
+.Eform{
+    margin-left: 15px;
+}
+button{
+    width: 100%;
+    color: white;
+    background-color: rgb(255, 20, 75);
+    border-color: rgb(255, 20, 75);
+    cursor: pointer;
+}
+.Enrol1{
+    display: flex;
+    height: 50vh;
+    width: 700px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 400px;
+    box-shadow: 5px 5px 20px 5px #888888;
+    padding-left: 150px;
+}
+
+ /* footer */
+footer{
+    width: 100%;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(39, 39, 39);
+    margin-top: 30px;
+}
+footer .logo{
+    padding-top: 15px;
+    display: flex;
+    margin-left: 43%;
+}
+footer .logo .a i{
+    padding: 10px;
+}
+footer .Letter{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+footer .Letter a{
+    color: white;
+    text-decoration: none;
+}
+footer .biglogo img{
+    width: 80px;
+    cursor: pointer;
+    margin-left: 47.5%;
+    border-radius: 50px;
+}
+.copy{
+    width: 100%;
+    background-color: black;
+}
+.copy a{
+    color: white;
+    text-decoration: none;
+}
+.footer2{
+    display: none;
+}
+
+ @media (max-width: 992px){
+    .Enrol{
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .Enrol1{
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .navbar{
+        height: 90px;
+    }
+    #Search{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar .Home{
+        display: none;
+    }
+    .navbar .courses{
+        display: none;
+    }
+    .navbar .About{
+        display: none;
+    }
+    .navbar .Loginbar{
+        display: none;
+    }
+    .accordion{
+        top: 90px;
+    }
+    
+ }
+
+ @media (max-width: 750px){
+    .Enrol{
+        width: 300px;
+        height: 400px;
+    }
+    .Enrol1{
+        width: 350px;
+        height: 500px;
+        padding-left: 0px;
+    }
+    .Eimg{
+        display: none;
+    }
+    /* footer */
+    footer{
+        display: none;
+    }
+    .footer2{
+        display: flex;
+        height: 200px;
+    }
+    .footer2 .a{
+        font-size: 50px; color: white;
+    }
+    .footer2 .Letter{
+        display: block;
+        text-align: left;
+        padding: 30px;
+        font-size: 15px;
+    }
+ }

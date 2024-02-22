@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="Elrol.CSS">
+
+</head>
+<body style="background-image: url(Image/tips-for-using-background-textures-in-web-design.jpg);">
+
+<!-- First page -->
+<div style="height: 60px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab1" onclick="switchone()"></i><i class="fa-solid fa-xmark"  id="tab2" onclick="switchtwo()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic desingn</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic desingn</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switchone(){
+    get('tab1').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab2').style.display="block";
+}
+function switchtwo(){
+    get('tab1').style.display="block";
+    get('Panel').style.display="none";
+    get('tab2').style.display="none";
+}
+
+ </script>
+
+
+<div class="Enrol">
+
+    <div class="Eimg"><img src="Image/IMG_20230820_160358.jpg" alt=""></div>
+    
+    <div class="Eform">
+        <h2 style="color: rgb(255, 20, 75);">Add a student</h2>
+        <p>First name</p><input type="text" placeholder="First name">
+        <p>Last name</p><input type="text" placeholder="Last name">
+        <p>Email</p><input type="text" placeholder="Email">
+        <p>Date of brith?</p>
+        <div class="select">
+            <select name="Days" id="Days">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+            <option value="">22</option>
+            <option value="">23</option>
+            <option value="">24</option>
+            <option value="">25</option>
+            <option value="">26</option>
+            <option value="">27</option>
+            <option value="">28</option>
+            <option value="">29</option>
+            <option value="">30</option>
+            <option value="">31</option>
+        </select>
+
+        <select name="Month" id="Month">
+            <option value="">Jan</option>
+            <option value="">Feb</option>
+            <option value="">Mar</option>
+            <option value="">Apr</option>
+            <option value="">May</option>
+            <option value="">Jun</option>
+            <option value="">Jul</option>
+            <option value="">Aug</option>
+            <option value="">Sep</option>
+            <option value="">Oct</option>
+            <option value="">Nov</option>
+            <option value="">Dec</option>
+        </select>
+
+        <select name="Years" id="Years">
+            <option value="">1980</option>
+            <option value="">1981</option>
+            <option value="">1982</option>
+            <option value="">1983</option>
+            <option value="">1984</option>
+            <option value="">1985</option>
+            <option value="">1986</option>
+            <option value="">1987</option>
+            <option value="">1988</option>
+            <option value="">1989</option>
+            <option value="">1990</option>
+            <option value="">1991</option>
+            <option value="">1992</option>
+            <option value="">1993</option>
+            <option value="">1994</option>
+            <option value="">1995</option>
+            <option value="">1996</option>
+            <option value="">1997</option>
+            <option value="">1998</option>
+            <option value="">1999</option>
+            <option value="">2000</option>
+            <option value="">2001</option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+            <option value="">2005</option>
+            <option value="">2006</option>
+            <option value="">2007</option>
+            <option value="">2008</option>
+            <option value="">2009</option>
+            <option value="">2010</option>
+            <option value="">2011</option>
+            <option value="">2012</option>
+            <option value="">2013</option>
+            <option value="">2014</option>
+            <option value="">2015</option>
+            <option value="">2016</option>
+            <option value="">2017</option>
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+        </select><br>
+        </div><br>
+        <button>Done</button>
+        
+    </div>
+</div>
+
+<div class="Enrol1">
+
+    <div class="Eimg1">
+        <div class="Payment"><input type="radio">
+        <img class="Pay" src="Image/Picsart_23-08-20_16-49-43-075 - Copy.jpg" alt="">
+        </div><br>
+
+        <div class="Payment"><input type="radio">
+        <img class="Pay" src="Image/Picsart_23-08-20_16-48-39-154.jpg" alt="">
+        </div><br>
+
+        <div class="Payment"><input type="radio">
+        <img class="Pay" src="Image/Picsart_23-08-20_16-49-13-046.jpg" alt="">
+        </div>
+
+    </div>
+    
+    <div class="Eform">
+        <h2 style="color: rgb(255, 20, 75);">Payment Methods</h2>
+        <p>CARD NUMBER</p><input type="text" placeholder="CARD NUMBER">
+        <p>EXPIRATION</p><input type="text" placeholder="EXPIRATION">
+        <p>CVV</p><input type="text" placeholder="CVV">
+        <p>CARD HOLDER'S NAME</p><input type="text" placeholder="CARD HOLDER'S NAME"><br><br>
+        
+        <button>CONFIRM PAYMENT</button>
+        
+    </div>
+</div>
+
+ 
+ <!-- footer -->
+
+<footer>
+
+    <div class="logo">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+
+        <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+
+    </div>
+
+    <div class="biglogo">
+        <img src="Image/logo6_26_18152.png" alt="">
+    </div>
+
+</footer>
+
+    
+<footer class="footer2">
+
+    <div style="display: block; padding: 20px;">
+        <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+        <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+        <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+    </div>
+
+    <div class="Letter">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+
+        <a href="">educarecollege@gmail.com</a><br><br>
+
+        <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+
+    </div>
+
+</footer>
+
+
+    <div class="copy">
+        <a href="">&copy;&ensp;Educare College 2023</a>
+    </div>
+
+</body> 

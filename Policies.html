@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare College</title>
+    
+    <script src="https://kit.fontawesome.com/05916fee6a.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script> -->
+
+    <script src="Policies.js"></script>
+    <link rel="stylesheet" href="AboutUs.CSS">
+
+</head>
+<body>
+
+<!-- First page -->
+<div style="height: 70px;"></div>
+
+<div class="navbar">
+    <img src="Image/logo6_26_18152.png" alt="" class="logo">
+    <h2>Educare College</h2>
+    <nav>
+        <ul>
+            <li> <label for="Search"></label>
+                <input type="text" id="Search" placeholder="Search...">
+                &emsp;<i class="fa-solid fa-magnifying-glass"></i>&emsp;<i class="fa-solid fa-bars" id="tab10" onclick="switch1()"></i><i class="fa-solid fa-xmark"  id="tab11" onclick="switch2()"></i>
+            </li>
+            
+            <li class="Home"><a href="Homepage.html">Home</a></li>
+
+            <li class="courses"><a href="#Subject area">Subject area</a>
+                <div class="hover hover1">
+                    <a href="Drawing.html">Drawing</a>
+                    <a href="Music.html">Music</a>
+                    <a href="Photography.html">Photography and Videography</a>
+                    <a href="Graphic desingn.html">Graphic Design</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </li>
+               
+            <li class="About"><a href="#About">About</a>
+                <div class="hover hover2">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Discount.html">Discounts & Concessions</a>
+                    <a href="Policies.html">Our Policies</a>
+                    <a href="Contact .html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="Loginbar"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="accordionbox" id="Panel">
+
+    <div class="accordion">
+
+        <div class="contentBx">
+            <div class="label">
+                <input style="display: inline-block; height: 20px;" type="text" placeholder="Search...">&emsp;<button style="height: 20px;">Search</button>
+            </div>
+         </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="Homepage.html">Home</a></div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#Subject area">Subject area</a></div>
+          <div class="content">
+           <a href="Drawing.html">Drawing</a><br>
+           <a href="Music.html">Music</a><br>
+           <a href="Photography.html">Photography and Videography</a><br>
+           <a href="Graphic desingn.html">Graphic Design</a><br>
+           <a href="Illustration.html">Illustration</a><br>
+        </div>
+       </div>
+
+       <div class="contentBx">
+          <div class="label"><a href="#About">About</a></div>
+          <div class="content">
+           <a href="AboutUs.html">About Us</a><br>
+           <a href="Discount.html">Discounts & Concessions</a><br>
+           <a href="Policies.html">Our Policies</a><br>
+           <a href="Contact .html">Contact Us</a><br>
+        </div>
+       </div>
+
+        <div class="contentBx">
+            <div class="label"><a href="Login.html">Login</a></div>
+        </div>
+       
+    </div>
+
+ </div>
+
+ <script>
+    const accordion = document.getElementsByClassName ('contentBx');
+    
+
+    for (i = 0; i<accordion.length; i++ ){
+             accordion[i].addEventListener('click', function(){
+                      this.classList.toggle('active')
+                      
+             })
+    }
+    function get(obj) {
+    return document.getElementById(obj);
+}
+function switch1(){
+    get('tab10').style.display="none";
+    get('Panel').style.display="flex";
+    get('tab11').style.display="block";
+}
+function switch2(){
+    get('tab10').style.display="block";
+    get('Panel').style.display="none";
+    get('tab11').style.display="none";
+}
+
+ </script>  
+
+
+<div class="Container">
+        
+
+    <div class="bimg" style="background-image: url(Image/Policies.jpg);">
+            <div class="title">
+                <h1>Policies</h1>
+            </div>
+    </div>
+
+    <div class="about">
+        <h1>Educare College Student Regulations</h1>
+        <p>Educare College Student Regulations take the form of both core and supplementary policies. The core policies are the most critical to know and understand in order to study at Educare College. These policies are the Terms and Conditions, Admissions Policy, Assessment Policy, Refund Policy, and Student Code of Conduct.</p>
+    </div><hr style=" width: 74%; margin-left: auto; margin-right: auto; color: rgb(255, 20, 75);">
+
+    <div class="Container2">
+        <div class="Policies Policies1">
+            <ul>
+                <li id="tab1" onclick="switchone()">Right to know</li><br>
+                <li id="tab2" onclick="switchtwo()">Academic and Creative Integrity Policy</li><br>
+                <li id="tab3" onclick="switchtree()">Academic and Graduation Requirements</li><br>
+                <li id="tab4" onclick="switchfour()">Alcohol and Illegal Drugs Policy</li><br>
+                <li id="tab5" onclick="switchfive()">Campus Security Policies</li><br>
+                <li id="tab6" onclick="switchsix()">Chosen Name and Gender Policy</li><br>
+                <li id="tab7" onclick="switchsenven()">Copyright and Peer-To-Peer File Sharing Policy</li><br>
+                <li id="tab8" onclick="switcheight()">Graduation Rates</li><br>
+                <li id="tab9" onclick="switchnine()">Social Media Policy</li>
+            </ul>
+        </div>
+
+        <div class="Policies Policies2" id="Panel1">
+            <h1>Right to Know</h1>
+            <p>The Student Right To Know and Campus Security Act of 1990 requires colleges and universities to disclose basic institution information, graduation rates, campus security policies and campus crime statistics. Information found throughout this section and the At a Glance page, as well as Graduation Rates, Tuition and Financial Aid, Transfer Credit, Student Support Services and Campus Security Policies encapsulates required information for current and prospective students at Educare College.</p>
+            <p>Additionally, Educare College publishes a Student Handbook every year containing current policies and procedures.</p>
+        </div>
+
+        <div class="Policies Policies2" id="Panel2">
+            <h1>Academic and Creative Integrity Policy</h1>
+            <p>Academic and creative integrity is essential to personal and educational growth of students, which all members of the Educare College community are expected to uphold. This value maintains the standards of excellence of the College and creates a meaningful learning environment. Academic misconduct is a violation of the Policy that creates an unfair or unearned academic advantage to a student. This Policy is intended to assist students in understanding the academic and creative expectations of the Educare Collegecommunity and what would constitute a violation of the Student Code of Conduct.</p>
+            <h1>Matters Constituting Academic Misconduct</h1>
+            <p>The following constitutes academic misconduct:</p>
+            <h3>Plagiarism</h3>
+            <p>Using another person’s language or idea without proper acknowledgment. When using the exact words of another in the presentation of written material, those words must be placed in quotation marks, with attribution to the original source, including proper citation of the source. Referencing or appropriating ideas may be part of an assignment, but it is always the student’s responsibility to properly acknowledge the source of the original material.
+            </p>
+            <h3>Creative dishonesty</h3>
+            <p>Using another person’s words, ideas, or images, borrowed or stolen, in whole or in part, without appropriate permission and acknowledgment. Artists and designers commonly draw on others’ works, such as for reference or inspiration or a conceptual use of an appropriated image. This type of exploration is encouraged and expected; however there is an important distinction between drawing inspiration from a piece and copying it, which may vary by discipline. Within individual departments and classes, while students are ultimately responsible for the creative integrity of their work, chairs and faculty should make efforts to clarify what practices do and do not constitute creative dishonesty.</p>
+            <h3>Submission of the same work</h3>
+            <p>Submission of the same work in two courses without explicit permission. Presenting all or part of work done from one course or independent study to another Educare College course requires permission of the instructor in the current course.</p>
+            <h3>Unauthorized collaboration</h3>
+            <p>In many course activities collaboration is permitted and encouraged. Course syllabi and in-class instructions will usually identify situations where collaboration on assignments is allowed. The student shares responsibility for ascertaining whether collaboration is approved by seeking clarification from the instructor.</p>
+            <h3>Cheating    </h3>
+            <p>This is a very broad category encompassing a variety of forms of misrepresentation and fraud. Cheating includes accepting or giving aid to another during a written exam or for a written report unless authorized by the instructor, or accepting or giving aid to another for an individual studio project unless authorized by the instructor.</p>
+            <h3>Falsification of records</h3>
+            <p>This includes any attempt to change grades or written records pertaining to assessment of a student’s academic and creative achievement; influencing, or attempting to influence, any College official, faculty member or employee responsible for processing grades, evaluating students or maintaining academic records through the use of bribery, threats, or any other means of coercion in order to affect a student’s grade or evaluation; and alteration or misuse of College documents pertaining to academic records by means of computer resources or other equipment.</p>
+        </div>
+
+        <div class="Policies Policies2" id="Panel3">
+            <h1>Academic and Graduation Requirements</h1>
+            <p>The College reserves the right to make changes in graduation requirements or faculty schedules without notice. Degrees are conferred in accordance with the following requirements. Educare College reserves the right to institute such changes, and will provide students and applicants with the appropriate information about specific changes in the study programs as soon as they are available. Please refer to Educare College's website and the Student Handbook for the most current information.</p>
+            <p>Graduation from Educare College is based upon successful completion of the curriculum of the department to which the student was admitted. This is estimated to take a minimum of eight terms, depending on availability of classes and amount of transfer credit.</p>
+            <h3>Undergraduate Students</h3>
+            <p>Undergraduate students must complete a minimum residency of four terms at Educare College to be eligible to receive their initial Bachelor of Fine Art (BFA) or Bachelor of Science (BS) degree from Educare College. To graduate, students must complete all studio and Humanities and Sciences (academic) course requirements within their department, including a minimum number of units by subject area.</p>
+            <p>Current course requirements are listed online at Inside Educare College  under “Degree Audit.” Undergraduate students must maintain a minimum cumulative GPA of 2.50. Students are expected to assume responsibility for their progress toward graduation. All course work must be completed prior to the date of graduation.</p>
+            <p>Students are ineligible for graduation until all requirements are complete, all account restrictions are cleared and all money due for tuition, fees, fines or supplies is paid.</p>
+        </div>
+
+        <div class="Policies Policies2" id="Panel4">
+            <h1>Alcohol And Illegal Drugs Policy</h1>
+            <p>Educare College is committed to providing its students, faculty and staff with an environment that promotes safe and responsible social interaction, and is required by law to provide you with our written policies on these issues.</p>
+            <p>Educare College's concern over the illicit use and the abuse of alcohol and drugs results from the serious health hazards caused by substance abuse; the potential legal penalties for those convicted of unlawful use, possession or distribution of these substances; and the ways in which alcohol and drugs adversely affect our campus environment. All members of the Educare College community should be familiar with and should adhere to Educare College's Policy on Substance Abuse. Individuals are expected to take responsibility for their own conduct and to comply with state and federal laws, as well as with Educare College's policies.</p>
+            <h3>Federal and State Law</h3>
+            <p>ArtCenter abides by federal and state laws regarding the use of illegal drugs and alcohol. It is a criminal offense:</p>
+            <ol>
+                <li>To use, possess, cultivate, manufacture, sell or transfer illegal drugs, or to illegally use other drugs or prescriptions.</li>
+                <li>For any person under the age of 21 to consume, purchase or possess alcohol.</li>
+                <li>To provide any alcoholic beverage to a person under the age of 21.</li>
+                <li>To provide any alcoholic beverage to an obviously intoxicated person.</li>
+                <li>To be under the influence of alcohol in a public place and unable to exercise care for one’s own safety or that of others.</li>
+                <li>To operate equipment or vehicles after consuming alcohol or drugs.</li>
+                <li>To use false evidence of age and identity to purchase alcohol, or to have such false evidence in one’s possession.</li>
+                <li>A student’s eligibility for federal financial aid may be suspended if the student is convicted, under federal or state law, of an offense involving the possession or sale of illegal drugs.</li>
+            </ol>
+        </div>
+
+        <div class="Policies Policies2" id="Panel5">
+            <h1>Campus Security Policies</h1>
+            <h3><b>Crime Reporting and Prevention</b></h3>
+            <p>Numerous efforts are made to inform members of the College community in a timely manner about campus crime and crime-related problems. These efforts include Daily Logs and Observation Reports. These logs and reports are distributed by officers to senior administrators and select members of the College community.</p>
+            <p>Additionally, in compliance with federal law, Educare College prepares an annual report that discloses campus crime and certain security policies, which is available on this website. The crime statistics are compiled using reports made to campus security, deans and other campus officials.</p>
+            <p>Regular Campus Safety and Health email alerts also help keep the campus population informed of security issues and possible dangerous situations that arise, such as dangerous weather conditions and wildlife observed on campus.</p>
+            <p>Educare College is aware that crimes may go unreported to law enforcement and strongly encourage our students, staff, faculty and visitors to immediately report any crimes that have occurred within our community to Educare College Campus Security officers. To report a crime, unusual situation or event during business hours, contact a Campus Safety officer immediately. Campus Safety personnel are on campus 24 hours a day, seven days a week, including holidays and term breaks.</p>
+            <p>Campus Safety personnel are stationed at the reception desk of individual buildings on both campuses. You can also contact the main reception line by phone at 626 396-2200.</p>
+            <p>If you cannot locate an officer, you can contact Campus Safety by calling 626 396-2299, by dialing extension 2211 from an on-campus phone or by using one of the emergency phones, which are located throughout each campus.</p>
+            <p>Most crimes can be prevented. At Educare College, crime prevention is a partnership between the College and its students. You can prevent crime by making safe behavior part of your lifestyle.</p>
+            <p>The College offers many services to help you stay safe:</p>
+            <ol>
+                <li>Campus Safety Escort Program is available in the evenings.</li>
+                <li>Emergency phones, many marked by a blue light, are located throughout each campus and provide a direct link to Campus Safety in an emergency.</li>
+                <li>Campus Safety educates the campus community about preventing crime before it happens.</li>
+                <li>Campus Safety officers enforce school regulations and policies on campus and in the surrounding areas.</li>
+                <li>Campus Safety compiles crime statistics, conducts security surveys and inspects campus grounds to identify and address future security and safety needs.</li>
+            </ol>
+        </div>
+
+        <div class="Policies Policies2" id="Panel6">
+            <h1>Chosen Name and Gender Policy</h1>
+            <h2>Purpose</h2>
+            <p>To inform members of the Educare College community of their individual right to designate a chosen name and gender for use in internal college systems.</p>
+            <h1>Scope</h1>
+            <p>This policy applies to all ArtCenter community members.</p>
+            <h1>Policy Statement</h1>
+            <p>Educare College(the College) seeks to provide an inclusive and non-discriminatory environment by making it possible for students and employees to use a chosen first name on internal college systems when a legal name is not required. The College recognizes that many students and employees choose to use a first name and/or gender identity that may differ from a legal name or assigned gender, whenever such designations are not absolutely necessary, limited by technology, or required by law.</p>
+            <h1>Policy</h1>
+            <p>It is the policy of Educare College that any current student or employee may choose a first name in addition to the legal name within the College’s internal information systems. The chosen first name shall be used in College communications and reporting, except where the use of the legal name is required. Similarly, any current student or employee may choose to identify a gender for internal use, except where the use of a previously assigned gender is required.</p>
+            <h1>Display of Chosen Name/Gender</h1>
+            <p>Chosen names and genders will be used solely for Educare College's internal systems; external systems will continue to use the individual’s legal name. Preferred name will appear, as appropriate, on internal college records, such as:</p>
+            <ol>
+                <li>ID badges</li>
+                <li>Class schedules</li>
+                <li>Rosters</li>
+                <li>Attendance sheets</li>
+                <li>Grade reports</li>
+                <li>Grade submissions</li>
+                <li>Academic records</li>
+                <li>Directories</li>
+                <li>Course evaluations</li>
+                <li>Performance evaluations</li>
+                <li>Departmental third-party systems</li>
+                <li>ArtCenter assigned email addresses</li>
+            </ol>
+        </div>
+
+        <div class="Policies Policies2" id="Panel7">
+            <h1>Copyright and Peer-To-Peer File Sharing Policy</h1>
+            <p>In accordance with the Higher Education Opportunity Act (HEOA) of 2008, Educare College has adopted a policy on illegal sharing of intellectual property that prohibits students from engaging in copyright infringement. Any unauthorized distribution of copyrighted works is copyright infringement, pure and simple. While some peer-to-peer file sharing is perfectly legal if the work being shared is not copyrighted or is shared with the authorization of the copyright owner, all other unauthorized distribution of copyrighted material violates federal copyright laws.</p>
+            <p>The College currently employs network monitoring technology to manage network traffic and to ensure that the College’s network use is the result of legal purposes only. As such, you are expected to comply with requests from Information Technology (IT), if contacted, to ensure that the College’s network is utilized only for legal purposes.</p>
+        </div>
+
+        <div class="Policies Policies2" id="Panel8">
+            <h1>Graduation Rates</h1>
+            <p>The Student Right-to-Know Act mandates that all institutions disclose their graduation rates of certificate- or degree-seeking, full-time students entering that institution, and to disclose these rates to all students and prospective students. For additional information, contact Enrollment Services at 626 396-2316.</p>
+            <p><b>One-Year Retention and Six-Year Graduation Rates Tables</b>(New First-Time Freshmen Who Enroll at Educare College Fall Term Only):</p>
+            <p>One-year retention and six-year graduation rates are calculated for those new first-time freshman entering Educare Collegefor the first time in the fall term of the cohort year noted in the corresponding tables.</p>
+            <p>One-Year Retention and Six-Year Graduation Rates Tables (All New Students Enrolling at Educare Collegein Spring, Summer and Fall Terms in Cohort Year):</p>
+            <p>One-year retention and six-year graduation rates are calculated for those new students entering Educare College for the first time in the calendar year (CY) noted in the corresponding tables.</p>
+        </div>
+
+        <div class="Policies Policies2" id="Panel9">
+            <h1>Social Media Policy</h1>
+            <p>Educare College has established these standards and rules that must be followed by anyone posting, approving, or otherwise engaging in social media on behalf of the College or on Educare College's social media accounts. This policy applies to all Educare College department, office, and institutional social media accounts (i.e., College-sponsored accounts). These accounts must be in compliance with all applicable laws, such as those pertaining to defamation, privacy, and intellectual property. Individual students and employees may be held personally liable for offending content. Remember when you are posting on an Educare College social media account, that you are speaking on behalf of and representing the institution, not yourself.</p>
+            <p>Primary institutional accounts managed by the Marketing and Communications department (“Marcom:) are as follows:</p>
+            <p>Instagram: @educarecollegeand</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
+
+    </div>
+
+
+<!-- footer -->
+    <footer>
+
+        <div class="logo">
+            <a href="" class="a a1"><i class="fa-brands fa-facebook" style="font-size: 50px; color: white;"></i></a>
+            <a href="" class="a a2"><i class="fa-brands fa-instagram" style="font-size: 50px; color: white;"></i></a>
+            <a href="" class="a a3"><i class="fa-brands fa-twitter" style="font-size: 50px; color: white;"></i></a>
+        </div>
+    
+        <div class="Letter">
+    
+            <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br>
+    
+            <span>&#9993;</span>&ensp;<a href="">educarecollege@gmail.com</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+    
+            <i class="fa fa-phone" aria-hidden="true"></i>&ensp;<a href="">09-789417850</a>
+    
+        </div>
+    
+        <div class="biglogo">
+            <img src="Image/logo6_26_18152.png" alt="">
+        </div>
+    
+    </footer>
+
+    <footer class="footer2">
+
+        <div style="display: block; padding: 20px;">
+            <a href="" class="a a1"><i class="fa-brands fa-facebook"></i></a><br>
+            <a href="" class="a a2"><i class="fa-brands fa-instagram"></i></a><br>
+            <a href="" class="a a3"><i class="fa-brands fa-twitter"></i></a><br>
+        </div>
+    
+        <div class="Letter">
+    
+            <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;<a href="">Arthurwady Lane, Bet: Theik Pan St & 43rd St, Bet: 66th St x 68th St, Mandalay</a><br><br>
+    
+            <a href="">educarecollege@gmail.com</a><br><br>
+    
+            <i class="fa fa-phone" aria-hidden="true"></i><a href="">09-789417850</a>
+    
+        </div>
+    
+    </footer>
+    
+        <div class="copy">
+            <a href="">&copy;&ensp;Educare College 2023</a>
+        </div>
+        
+</div>
+</body>
